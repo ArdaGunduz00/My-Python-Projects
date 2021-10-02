@@ -32,7 +32,7 @@ url1 ="https://www.trendyol.com/sony/playstation-5-825-gb-dijital-surum-turkce-m
 
 
 headers={
-    "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36"}
+    "User-Agent":Go write the google what my user agent"}
 
 page=requests.get(url1, headers=headers)
 
@@ -61,3 +61,7 @@ if(convertedprice <=9099):
     """.format(producTittle,image,url1)
     sendMail("Example Gmail"," Product Price Reduce",htmlcontent)
 print(convertedprice)
+    
+    
+    
+    ## My First Python Project 
