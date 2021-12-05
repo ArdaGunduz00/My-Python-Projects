@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @ArdaGunduz06
+- 👋 Hi, I’m @ArdaGunduz00
 - 👀 I’m interested in Software
 - 🌱 I’m currently learning Python 
 <!---
