@@ -12,5 +12,5 @@ elif secim =="2":#seçim 2 e eşitse santimetreyi metreye çevirmesini istedim
     print(sayi1/100)
 else:#seçim 1 veya 2 dışında bir değişken ise hata vermesini söledim
     print("Lütfen geçerli bir işlem yapınız")
-
+#Basit Python Projem
 
