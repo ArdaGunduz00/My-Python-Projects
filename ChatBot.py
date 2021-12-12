@@ -3,8 +3,8 @@ import datetime
 print("Ardanın Özel Asistanı")
 
 tarih = datetime.datetime.now()
-kullaniciadi = input(print("Kullanıcı Adı:"))
-kullanicişifre = input(print("Şifre:"))
+kullaniciadi = input(("Kullanıcı Adı:"))
+kullanicişifre = input(("Şifre:"))
 
 if kullaniciadi == "arda" and kullanicişifre == "1234":
     print("Hoşgeldiniz Efendim")
@@ -13,7 +13,7 @@ else:
     print("Yanlış Şifre")
     quit()
 
-banasorusor = input(print("Bana soru sorun efendim:")).lower()
+banasorusor = input(("Bana soru sorun efendim:")).lower()
 
 
 def banasorusor1(cevap):
