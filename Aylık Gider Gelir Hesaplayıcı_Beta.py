@@ -1,9 +1,10 @@
 print("Aylık Gider Gelir Hesaplayıcı")
 while True:
+    months=[]
     month=input("Ay giriniz:")
     if month=="q":
         break
-    aylar.append(month)
+    months.append(month)
     try:
         salary=int(input("Maaş giriniz:"))
         extra_salary=int(input("Ekstra maaş giriniz:"))
