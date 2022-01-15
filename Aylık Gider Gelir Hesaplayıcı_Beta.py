@@ -1,6 +1,5 @@
 print("Aylık Gider Gelir Hesaplayıcı")
 while True:
-    aylar=[]
     month=input("Ay giriniz:")
     if month=="q":
         break
