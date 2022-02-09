@@ -22,21 +22,21 @@ PLAYER_LAZER=pygame.image.load(os.path.join("assets", "blue_rocket.png"))
 LASER01=pygame.image.load(os.path.join("assets", "laser01.png"))
 LASER02=pygame.image.load(os.path.join("assets", "laser02.png"))
 LASER03=pygame.image.load(os.path.join("assets", "laser03.png"))
-class Laser():
+class Laser(): # lasere kordinat ve img veriyoruzz
     def __init__(self,x,y,img):
         self.x = x
         self.y=y
         self.img=img
 
-    def move(self,velocity):
+    def move(self,velocity): # Lazeri hareket ettitiroyurz
         self.y -=velocity
 
-    def draw(self,window):
+    def draw(self,window): # Lazeri Çizdiriyoruz
         window.blit(self.img,(self.x,self.y,))
 
 
 
-class Ship():
+class Ship(): # ortak gemi olusturuyorz
     def __init__(self,x,y,health=100):
         self.x=x
         self.y=y
@@ -45,11 +45,11 @@ class Ship():
         self.lazer_img=None
         self.lasers=[]
 
-    def shoot(self):
+    def shoot(self): # Bütün gemileri ateş etme şeyi veriyoruz
         laser=Laser(self.x,self.y,self.lazer_img)
         self.lasers.append(laser)
 
-    def MoveLasers(self,velocity):
+    def MoveLasers(self,velocity): #Lazerler hareket ediyor
         for laser in self.lasers:
             laser.move(velocity)
             
